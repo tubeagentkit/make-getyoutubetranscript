@@ -2,7 +2,7 @@
   {
     "name": "apiKey",
     "type": "password",
-    "label": "API Key",
+    "label": "API key",
     "required": true,
     "editable": true,
     "help": "Create a key at [getyoutubetranscript.com/developers](https://getyoutubetranscript.com/developers). The free tier needs no card. Each successful request uses 1 credit; failed requests are not charged."

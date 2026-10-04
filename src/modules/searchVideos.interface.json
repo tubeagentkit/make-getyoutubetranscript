@@ -1,9 +1,86 @@
 [
-  { "name": "videoId", "type": "text", "label": "Video ID" },
-  { "name": "title", "type": "text", "label": "Title" },
-  { "name": "link", "type": "url", "label": "Video URL" },
-  { "name": "length", "type": "text", "label": "Length" },
-  { "name": "views", "type": "text", "label": "Views" },
-  { "name": "published_time", "type": "text", "label": "Published" },
-  { "name": "channel", "type": "collection", "label": "Channel", "spec": [ { "name": "name", "type": "text", "label": "Name" }, { "name": "id", "type": "text", "label": "ID" } ] }
+  {
+    "name": "videoId",
+    "type": "text",
+    "label": "Video ID"
+  },
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Title"
+  },
+  {
+    "name": "link",
+    "type": "url",
+    "label": "Video URL"
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "label": "Description"
+  },
+  {
+    "name": "position",
+    "type": "uinteger",
+    "label": "Position"
+  },
+  {
+    "name": "length",
+    "type": "text",
+    "label": "Length"
+  },
+  {
+    "name": "views",
+    "type": "text",
+    "label": "Views"
+  },
+  {
+    "name": "published_date",
+    "type": "text",
+    "label": "Published"
+  },
+  {
+    "name": "channel",
+    "type": "collection",
+    "label": "Channel",
+    "spec": [
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name"
+      },
+      {
+        "name": "link",
+        "type": "url",
+        "label": "Channel URL"
+      },
+      {
+        "name": "verified",
+        "type": "boolean",
+        "label": "Verified"
+      },
+      {
+        "name": "thumbnail",
+        "type": "url",
+        "label": "Thumbnail URL"
+      }
+    ]
+  },
+  {
+    "name": "thumbnail",
+    "type": "collection",
+    "label": "Thumbnail",
+    "spec": [
+      {
+        "name": "static",
+        "type": "url",
+        "label": "Static thumbnail URL"
+      },
+      {
+        "name": "rich",
+        "type": "url",
+        "label": "Animated thumbnail URL"
+      }
+    ]
+  }
 ]

@@ -10,10 +10,10 @@ const state = existsSync(STATE) ? JSON.parse(readFileSync(STATE, 'utf8')) : {};
 const save = () => writeFileSync(STATE, JSON.stringify(state, null, 2));
 
 const MODULES = [
-  { name: 'getTranscript', typeId: 4, label: 'Get a Transcript', description: 'Gets the transcript of a YouTube video, optionally with timestamps.', sections: ['api', 'parameters', 'interface', 'samples'] },
-  { name: 'searchVideos', typeId: 9, label: 'Search Videos', description: 'Searches YouTube for videos matching a query.', sections: ['api', 'parameters', 'interface'] },
-  { name: 'listChannelVideos', typeId: 9, label: 'List Channel Videos', description: "Lists a YouTube channel's uploaded videos, newest first.", sections: ['api', 'parameters', 'interface'] },
-  { name: 'makeApiCall', typeId: 12, label: 'Make an API Call', description: 'Performs an arbitrary authorized API call.', sections: ['api', 'parameters', 'interface'] },
+  { name: 'getTranscript', typeId: 4, label: 'Get a transcript', description: 'Gets the transcript of a YouTube video, optionally with timestamps.', sections: ['api', 'parameters', 'interface', 'samples'] },
+  { name: 'searchVideos', typeId: 9, label: 'Search videos', description: 'Searches YouTube for videos matching a query.', sections: ['api', 'parameters', 'interface'] },
+  { name: 'listChannelVideos', typeId: 9, label: 'List channel videos', description: "Lists a YouTube channel's uploaded videos, newest first.", sections: ['api', 'parameters', 'interface'] },
+  { name: 'makeApiCall', typeId: 12, label: 'Make an API call', description: 'Performs an arbitrary authorized API call.', sections: ['api', 'parameters', 'interface'] },
 ];
 
 if (!state.app) {
@@ -24,6 +24,8 @@ if (!state.app) {
 const { app, version } = state;
 await make.sdk.apps.setSection(app, version, 'base', read('base.json'));
 console.log('base set');
+await make.sdk.apps.setSection(app, version, 'groups', read('groups.json'));
+console.log('groups set');
 
 if (!state.connection) {
   const conn = await make.sdk.connections.create(app, { type: 'basic', label: 'GetYouTubeTranscript' });

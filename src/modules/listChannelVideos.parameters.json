@@ -1,4 +1,16 @@
 [
-  { "name": "channel", "type": "text", "label": "Channel", "required": true, "help": "Channel @handle, URL or channel ID." },
-  { "name": "limit", "type": "uinteger", "label": "Limit", "default": 30, "help": "Maximum number of videos to return, newest first. Each page of about 30 videos uses 1 credit." }
+  {
+    "name": "channel",
+    "type": "text",
+    "label": "Channel",
+    "required": true,
+    "help": "Channel @handle, URL or channel ID."
+  },
+  {
+    "name": "limit",
+    "type": "uinteger",
+    "label": "Limit",
+    "default": 10,
+    "help": "Maximum number of results to return and work with during one execution cycle."
+  }
 ]

@@ -1,7 +1,12 @@
 {
-  "url": "{{parameters.url}}",
+  "url": "https://getyoutubetranscript.com/api/{{parameters.url}}",
   "method": "{{parameters.method}}",
-  "qs": "{{toCollection(parameters.qs, 'key', 'value')}}",
+  "headers": {
+    "{{...}}": "{{toCollection(parameters.headers, 'key', 'value')}}"
+  },
+  "qs": {
+    "{{...}}": "{{toCollection(parameters.qs, 'key', 'value')}}"
+  },
   "body": "{{parameters.body}}",
   "type": "json",
   "response": {

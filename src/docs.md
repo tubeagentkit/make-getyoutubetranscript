@@ -11,7 +11,7 @@ Each successful request uses 1 credit. Failed requests are not charged.
 
 ## Modules
 
-- **Get a Transcript**: transcript text for a YouTube URL or video ID, optionally with per-line timestamps.
-- **Search Videos**: YouTube videos matching a query.
-- **List Channel Videos**: a channel's uploads, newest first.
-- **Make an API Call**: any other endpoint from the [API docs](https://getyoutubetranscript.com/docs).
+- **Get a transcript**: transcript text for a YouTube URL or video ID, optionally with per-line timestamps.
+- **Search videos**: YouTube videos matching a query.
+- **List channel videos**: a channel's uploads, newest first.
+- **Make an API call**: any other endpoint from the [API docs](https://getyoutubetranscript.com/docs).

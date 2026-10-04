@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Actions",
+    "modules": [
+      "getTranscript",
+      "searchVideos",
+      "listChannelVideos"
+    ]
+  },
+  {
+    "label": "Other",
+    "modules": [
+      "makeApiCall"
+    ]
+  }
+]

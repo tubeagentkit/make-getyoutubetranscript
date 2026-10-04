@@ -4,10 +4,10 @@ Custom app for [Make](https://www.make.com) that wraps the [GetYouTubeTranscript
 
 Modules:
 
-- **Get a Transcript** (action): transcript text for a YouTube URL or video ID, optionally with per-line timestamps.
-- **Search Videos** (search): YouTube videos matching a query, with a limit and automatic paging.
-- **List Channel Videos** (search): a channel's uploads, newest first, with a limit and automatic paging.
-- **Make an API Call** (universal): any other endpoint from the [API docs](https://getyoutubetranscript.com/docs).
+- **Get a transcript** (action): transcript text for a YouTube URL or video ID, optionally with per-line timestamps.
+- **Search videos** (search): YouTube videos matching a query, with a limit and automatic paging.
+- **List channel videos** (search): a channel's uploads, newest first, with a limit and automatic paging.
+- **Make an API call** (universal): any other endpoint from the [API docs](https://getyoutubetranscript.com/docs).
 
 The connection takes an API key from [getyoutubetranscript.com/developers](https://getyoutubetranscript.com/developers) (free tier, no card) and is verified against the free `/credits` endpoint.
 
