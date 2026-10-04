@@ -1,0 +1,49 @@
+[
+  {
+    "name": "url",
+    "type": "text",
+    "label": "URL",
+    "required": true,
+    "help": "Path relative to `https://getyoutubetranscript.com/api/v1`, for example `/credits`. Your API key is sent automatically. See the [API docs](https://getyoutubetranscript.com/docs)."
+  },
+  {
+    "name": "method",
+    "type": "select",
+    "label": "Method",
+    "required": true,
+    "default": "GET",
+    "options": [
+      {
+        "label": "GET",
+        "value": "GET"
+      },
+      {
+        "label": "POST",
+        "value": "POST"
+      }
+    ]
+  },
+  {
+    "name": "qs",
+    "type": "array",
+    "label": "Query String",
+    "spec": [
+      {
+        "name": "key",
+        "type": "text",
+        "label": "Key"
+      },
+      {
+        "name": "value",
+        "type": "text",
+        "label": "Value"
+      }
+    ]
+  },
+  {
+    "name": "body",
+    "type": "any",
+    "label": "Body",
+    "help": "Request body, used with POST."
+  }
+]

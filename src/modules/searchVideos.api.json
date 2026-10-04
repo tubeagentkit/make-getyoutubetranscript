@@ -1,0 +1,20 @@
+{
+  "url": "/search",
+  "method": "GET",
+  "qs": {
+    "q": "{{parameters.query}}",
+    "type": "video",
+    "limit": "{{min(50, ifempty(parameters.limit, 10))}}",
+    "country": "{{ifempty(parameters.country, 'us')}}",
+    "language": "{{ifempty(parameters.language, 'en')}}"
+  },
+  "response": {
+    "limit": "{{ifempty(parameters.limit, 10)}}",
+    "iterate": "{{body.data.video_results}}",
+    "output": "{{item}}"
+  },
+  "pagination": {
+    "condition": "{{body.data.continuation_token}}",
+    "qs": { "page_token": "{{body.data.continuation_token}}" }
+  }
+}

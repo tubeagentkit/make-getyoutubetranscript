@@ -1,0 +1,16 @@
+{
+  "name": "make-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node deploy.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@makehq/sdk": "^1.6.19"
+  },
+  "type": "module"
+}

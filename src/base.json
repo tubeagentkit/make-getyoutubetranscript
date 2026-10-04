@@ -1,0 +1,15 @@
+{
+  "baseUrl": "https://getyoutubetranscript.com/api/v1",
+  "headers": {
+    "authorization": "Bearer {{connection.apiKey}}",
+    "user-agent": "make-getyoutubetranscript/1.0"
+  },
+  "response": {
+    "error": {
+      "message": "[{{statusCode}}] {{ifempty(body.code, 'ERROR')}}: {{ifempty(body.message, 'Request failed')}}"
+    }
+  },
+  "log": {
+    "sanitize": ["request.headers.authorization"]
+  }
+}

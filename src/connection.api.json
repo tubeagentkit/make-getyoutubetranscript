@@ -1,0 +1,20 @@
+{
+  "url": "https://getyoutubetranscript.com/api/v1/credits",
+  "method": "GET",
+  "headers": {
+    "authorization": "Bearer {{parameters.apiKey}}",
+    "user-agent": "make-getyoutubetranscript/1.0"
+  },
+  "response": {
+    "error": {
+      "message": "[{{statusCode}}] {{ifempty(body.code, 'ERROR')}}: {{ifempty(body.message, 'Invalid API key')}}"
+    },
+    "metadata": {
+      "type": "text",
+      "value": "{{body.data.plan}} plan"
+    }
+  },
+  "log": {
+    "sanitize": ["request.headers.authorization"]
+  }
+}

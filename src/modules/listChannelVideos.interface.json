@@ -1,0 +1,10 @@
+[
+  { "name": "id", "type": "text", "label": "Video ID" },
+  { "name": "title", "type": "text", "label": "Title" },
+  { "name": "link", "type": "url", "label": "Video URL" },
+  { "name": "position", "type": "uinteger", "label": "Position" },
+  { "name": "length", "type": "text", "label": "Length" },
+  { "name": "views", "type": "text", "label": "Views" },
+  { "name": "published_time", "type": "text", "label": "Published" },
+  { "name": "thumbnail", "type": "url", "label": "Thumbnail URL" }
+]

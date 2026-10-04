@@ -1,0 +1,5 @@
+[
+  { "name": "video", "type": "text", "label": "Video URL or ID", "required": true, "help": "A YouTube URL (watch, youtu.be or shorts) or the 11-character video ID." },
+  { "name": "language", "type": "text", "label": "Language", "default": "en", "help": "Language code, for example `en`, `es` or `de`. Defaults to English." },
+  { "name": "timestamps", "type": "boolean", "label": "Include timestamps", "default": false, "help": "Adds segments with start and duration in seconds." }
+]

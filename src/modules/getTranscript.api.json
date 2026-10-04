@@ -1,0 +1,12 @@
+{
+  "url": "/transcript",
+  "method": "GET",
+  "qs": {
+    "v": "{{parameters.video}}",
+    "language": "{{ifempty(parameters.language, 'en')}}",
+    "timestamps": "{{if(parameters.timestamps, 'true', 'false')}}"
+  },
+  "response": {
+    "output": "{{body.data}}"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "url": "/channel/videos",
+  "method": "GET",
+  "qs": { "channel": "{{parameters.channel}}" },
+  "response": {
+    "limit": "{{ifempty(parameters.limit, 30)}}",
+    "iterate": "{{body.data.videos}}",
+    "output": "{{item}}"
+  },
+  "pagination": {
+    "condition": "{{body.data.continuation_token}}",
+    "qs": { "continuation": "{{body.data.continuation_token}}" }
+  }
+}
